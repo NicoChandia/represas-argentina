@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+import { represas, totales } from '../../data/represas';
+
+const base = Astro.site ? Astro.site.origin : '';
+const ejemplo = represas.find(r => r.id === 'el-chocon')!;
+
+const endpoints = [
+  { ruta: '/api/index.json', desc: 'Índice: totales y lista de endpoints.' },
+  { ruta: '/api/represas.json', desc: `Las ${totales.represas} represas, ordenadas de norte a sur.` },
+  { ruta: '/api/represas/{id}.json', desc: 'Una represa por su id, con las represas aguas arriba y aguas abajo.' },
+  { ruta: '/api/cuencas.json', desc: 'Cuencas con sus represas, potencia y generación sumadas.' },
+  { ruta: '/api/cascadas.geojson', desc: 'Represas (puntos) y cascadas por río (líneas) en GeoJSON, listo para cualquier mapa.' },
+];
+
+const respuesta = JSON.stringify(
+  {
+    meta: { oficial: false, fuente: { nombre: 'Registro de presas fiscalizadas del ORSEP', licencia: 'CC BY 4.0' }, '…': '…' },
+    represa: {
+      id: ejemplo.id,
+      nombreComun: ejemplo.nombreComun,
+      rio: ejemplo.rio,
+      provincia: ejemplo.provincia,
+      potenciaMW: ejemplo.potenciaMW,
+      alturaM: ejemplo.alturaM,
+      embalseHm3: ejemplo.embalseHm3,
+      anio: ejemplo.anio,
+      lat: ejemplo.lat,
+      lon: ejemplo.lon,
+      aguasArriba: ['pichi-picun-leufu'],
+      aguasAbajo: ['arroyito'],
+      '…': '…',
+    },
+  },
+  null,
+  2
+);
+---
+
+<Base titulo="API" descripcion="API abierta y gratuita con los datos de las represas de Argentina en JSON y GeoJSON, sin clave.">
+  <main class="contenido lectura">
+    <p class="eyebrow">API abierta</p>
+    <h1>Datos en JSON</h1>
+    <p class="lead">
+      Los mismos datos del mapa, para usar en tus proyectos. Sin clave, sin registro y con CORS abierto. Son archivos estáticos que se regeneran en cada publicación del sitio.
+    </p>
+
+    <h2>Endpoints</h2>
+    <div class="tabla-scroll">
+      <table class="tabla">
+        <thead><tr><th scope="col">GET</th><th scope="col">Devuelve</th></tr></thead>
+        <tbody>
+          {endpoints.map(e => (
+            <tr>
+              <td><code>{e.ruta}</code></td>
+              <td>{e.desc}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Ejemplo</h2>
+    <pre class="codigo"><code>{`fetch('${base}/api/represas/el-chocon.json')
+  .then(r => r.json())
+  .then(({ represa }) => console.log(represa.nombreComun, represa.potenciaMW));`}</code></pre>
+    <p>Respuesta (recortada):</p>
+    <pre class="codigo"><code>{respuesta}</code></pre>
+
+    <h2>Ids disponibles</h2>
+    <p class="ids">
+      {represas.map(r => <a href={`/api/represas/${r.id}.json`}><code>{r.id}</code></a>)}
+    </p>
+
+    <h2>Condiciones de uso</h2>
+    <ul>
+      <li>Los datos provienen del <a href="https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas" target="_blank" rel="noopener">Registro de presas fiscalizadas del ORSEP</a>, publicado bajo licencia Creative Commons Atribución 4.0. Si los usás, citá al ORSEP como fuente.</li>
+      <li>Este es un proyecto independiente y no oficial. No reemplaza la información del organismo.</li>
+      <li>Las coordenadas de 24 represas provienen de OpenStreetMap (© colaboradores de OpenStreetMap, licencia ODbL); el campo <code>coordenadas</code> indica si es <code>OpenStreetMap</code> o <code>aproximada</code>. Los campos sin dato en la fuente vienen como <code>null</code>.</li>
+      <li>No son datos en tiempo real: reflejan las fichas técnicas al momento de publicar el sitio (campo <code>meta.generado</code>).</li>
+    </ul>
+  </main>
+</Base>
+
+<style>
+  .tabla-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  .tabla { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 15px; }
+  .tabla th, .tabla td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .tabla thead th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--surface-2); }
+  .tabla tbody tr:last-child td { border-bottom: 0; }
+  code { font-family: var(--f-mono); font-size: 0.88em; }
+  td code { white-space: nowrap; }
+  .codigo { overflow-x: auto; padding: 14px 16px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); font-size: 14px; line-height: 1.55; }
+  .ids { display: flex; flex-wrap: wrap; gap: 6px; max-width: none !important; }
+  .ids a { padding: 2px 8px; border-radius: 6px; background: var(--agua-suave); color: var(--ink); text-decoration: none; }
+</style>

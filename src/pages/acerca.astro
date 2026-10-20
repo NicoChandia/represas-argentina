@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import { totales } from '../data/represas';
+---
+
+<Base
+  titulo="Fuentes y método"
+  descripcion="De dónde salen los datos del mapa de represas de Argentina, qué incluye y qué falta."
+>
+  <main class="contenido lectura">
+    <p class="eyebrow">Fuentes y método</p>
+    <h1>De dónde salen los datos</h1>
+
+    <h2>Fuente oficial</h2>
+    <p>
+      Las fichas técnicas (operador, río, tipo de presa, altura, coronamiento, embalse, finalidades, potencia, generación media y año de habilitación) y las fotos provienen del
+      <a href="https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas" target="_blank" rel="noopener">Registro de presas fiscalizadas del ORSEP</a>
+      (Organismo Regulador de Seguridad de Presas). Cada represa enlaza a su ficha original.
+    </p>
+
+    <h2>Qué incluye hoy</h2>
+    <p>
+      {totales.represas} presas de las regionales Norte, Cuyo Centro, Comahue y Patagonia del ORSEP. Quedaron afuera por ahora:
+    </p>
+    <ul>
+      <li>Tierras Blancas (Mendoza), cuya ficha no se pudo leer al armar el conjunto de datos.</li>
+      <li>Derivador Punta Negra (San Juan), porque su página muestra la ficha técnica del complejo Ullum y no queda claro a cuál corresponde.</li>
+      <li>El arco de protección de la central Los Reyunos, que no es una presa de embalse.</li>
+      <li>Presas que el ORSEP no fiscaliza, como las binacionales Yacyretá y Salto Grande o las que dependen de cada provincia.</li>
+    </ul>
+
+    <h2>Ubicación</h2>
+    <p>
+      Las fichas del ORSEP no publican coordenadas. La ubicación de 24 represas sale del muro dibujado en
+      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (© colaboradores de OpenStreetMap, licencia ODbL).
+      Las otras 4 (los dos derivadores de Pueblo Viejo, Batiruana y Aisol) no figuran ahí y su ubicación es aproximada.
+    </p>
+
+    <h2>Cómo se conectan</h2>
+    <p>
+      Las líneas punteadas unen presas que están sobre el mismo río, en el sentido en que corre el agua: por ejemplo, en el Limay el agua pasa por Alicurá, Piedra del Águila, Pichi Picún Leufú, El Chocón y Arroyito. Son un esquema: unen las presas en línea recta y no siguen el cauce real.
+    </p>
+
+    <h2>Fotos</h2>
+    <p>
+      Las fotos de cada ficha son del ORSEP y de
+      <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>, con licencias libres (Creative Commons o dominio público).
+      Cada foto de Commons muestra su autor y su licencia, con un enlace a su página original.
+    </p>
+
+    <h2>Mapas base</h2>
+    <p>Mapa: © OpenStreetMap y CARTO. Satélite: Esri, Maxar, Earthstar Geographics.</p>
+  </main>
+</Base>

@@ -1,0 +1,75 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  titulo: string;
+  descripcion: string;
+  imagen?: string;
+  /** La página del mapa ocupa toda la pantalla y no lleva pie. */
+  pantallaCompleta?: boolean;
+}
+
+const { titulo, descripcion, imagen, pantallaCompleta = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ruta = Astro.url.pathname;
+const actual = (href: string) => (href === '/' ? ruta === '/' : ruta.startsWith(href)) ? 'page' : undefined;
+const tituloCompleto = titulo === 'Represas de Argentina' ? titulo : `${titulo} · Represas de Argentina`;
+---
+
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descripcion} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0b1316" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:title" content={tituloCompleto} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:url" content={canonical} />
+    {imagen && <meta property="og:image" content={imagen} />}
+    <meta name="twitter:card" content={imagen ? 'summary_large_image' : 'summary'} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;600&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap"
+    />
+  </head>
+  <body class:list={{ 'pantalla-completa': pantallaCompleta }}>
+    <header class="site-header">
+      <a class="marca" href="/" aria-label="Represas de Argentina, inicio">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M3 8h26l-6 18H9z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+          <path d="M8 15c3 2 5-2 8 0s5 2 8 0" fill="none" stroke="var(--agua)" stroke-width="2.4" stroke-linecap="round" />
+        </svg>
+        <span>Represas<span class="largo"> de Argentina</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Secciones">
+        <a href="/" aria-current={actual('/')}>Mapa</a>
+        <a href="/represas/" aria-current={actual('/represas')}>Listado</a>
+        <a href="/api/" aria-current={actual("/api")}>API</a>
+        <a href="/acerca/" aria-current={actual('/acerca')}>Fuentes</a>
+      </nav>
+    </header>
+
+    <slot />
+
+    {
+      !pantallaCompleta && (
+        <footer class="site-footer">
+          <p>
+            Datos: <a href="https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas" target="_blank" rel="noopener">Registro de presas fiscalizadas del ORSEP</a>. Proyecto independiente, hecho por <a href="https://www.linkedin.com/in/nicolas-chandia" target="_blank" rel="noopener">Nicolás Chandía</a>.
+          </p>
+        </footer>
+      )
+    }
+  </body>
+</html>

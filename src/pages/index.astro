@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import MapaRepresas from '../components/MapaRepresas';
+import { represas } from '../data/represas';
+---
+
+<Base
+  titulo="Represas de Argentina"
+  descripcion="Mapa interactivo de las represas de Argentina de norte a sur: ubicación, río, potencia, altura, embalse y fotos, con datos oficiales del ORSEP."
+  pantallaCompleta
+>
+  <main>
+    <h1 class="visually-hidden">Mapa de las represas de Argentina</h1>
+    <MapaRepresas client:only="react">
+      <div slot="fallback" class="contenido">
+        <p class="eyebrow">Cargando el mapa…</p>
+        <ul>
+          {represas.map(r => <li><a href={`/represas/${r.id}/`}>{r.nombreComun}</a> · Río {r.rio}, {r.provincia}</li>)}
+        </ul>
+      </div>
+    </MapaRepresas>
+  </main>
+</Base>

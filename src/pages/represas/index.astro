@@ -1,0 +1,69 @@
+---
+import Base from '../../layouts/Base.astro';
+import { cuencas, generaEnergia, num, represas, totales } from '../../data/represas';
+---
+
+<Base
+  titulo="Listado de represas"
+  descripcion={`Las ${totales.represas} represas fiscalizadas por el ORSEP, agrupadas por cuenca y ordenadas de norte a sur, con potencia, altura y año de habilitación.`}
+>
+  <main class="contenido">
+    <p class="eyebrow">Listado · de norte a sur</p>
+    <h1>Todas las represas</h1>
+    <p class="lead">
+      {totales.represas} presas en {cuencas.length} cuencas. Las que generan electricidad suman {num(totales.potenciaMW, 'MW')} de potencia instalada y unos {num(totales.generacionGWh, 'GWh')} por año.
+    </p>
+
+    {
+      cuencas.map(c => (
+        <section class="cuenca" id={c.toLowerCase().replace(/[^a-z]+/g, '-')}>
+          <h2>Cuenca {c}</h2>
+          <div class="tabla-scroll">
+            <table class="tabla">
+              <thead>
+                <tr>
+                  <th scope="col">Represa</th>
+                  <th scope="col">Río</th>
+                  <th scope="col">Provincia</th>
+                  <th scope="col" class="der">Potencia</th>
+                  <th scope="col" class="der">Altura</th>
+                  <th scope="col" class="der">Año</th>
+                </tr>
+              </thead>
+              <tbody>
+                {represas
+                  .filter(r => r.cuenca === c)
+                  .map(r => (
+                    <tr>
+                      <th scope="row">
+                        <span class:list={['dot', { energia: generaEnergia(r) }]} aria-hidden="true" />
+                        <a href={`/represas/${r.id}/`}>{r.nombreComun}</a>
+                      </th>
+                      <td>{r.rio}</td>
+                      <td>{r.provincia}</td>
+                      <td class="num der">{r.potenciaMW ? num(r.potenciaMW, 'MW') : '—'}</td>
+                      <td class="num der">{r.alturaM ? num(r.alturaM, 'm') : '—'}</td>
+                      <td class="num der">{r.anio}</td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ))
+    }
+  </main>
+</Base>
+
+<style>
+  .tabla-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  .tabla { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 15px; }
+  .tabla th, .tabla td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+  .tabla thead th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; background: var(--surface-2); }
+  .tabla tbody tr:last-child > * { border-bottom: 0; }
+  .tabla tbody th { font-weight: 600; }
+  .tabla a { color: var(--ink); text-decoration-color: var(--agua); text-underline-offset: 3px; }
+  .der { text-align: right !important; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--sin-energia); margin-right: 8px; }
+  .dot.energia { background: var(--energia); }
+</style>

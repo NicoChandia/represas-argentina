@@ -1,0 +1,1215 @@
+[
+  {
+    "id": "gral-manuel-belgrano",
+    "nombre": "Gral. Manuel Belgrano",
+    "nombreComun": "Cabra Corral",
+    "complejo": "Cabra Corral",
+    "operador": "AES Argentina",
+    "provincia": "Salta",
+    "localidad": "Coronel Moldes",
+    "rio": "Juramento",
+    "cuenca": "Juramento-Salado",
+    "regional": "Norte",
+    "tipo": "Materiales sueltos, zonificada",
+    "alturaM": 113.75,
+    "coronamientoM": 510,
+    "embalseHm3": 3130,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 102,
+    "generacionGWh": 220,
+    "anio": 1973,
+    "lat": -25.26908,
+    "lon": -65.32972,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/gral.manuel_belgrano_aereas_42.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/gral.manuel_belgrano_aereas_83.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/gral-manuel-belgrano",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Esta es Cabra Corral, cerca de Coronel Moldes. Es la más grande del río Juramento: tiene casi 114 metros de altura y su embalse guarda 3.130 hectómetros cúbicos de agua. Funciona desde 1973 y genera 102 megavatios, además de regar y controlar crecidas.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Dique_Cabra_Corral%2C_Salta%2C_Argentina.jpg/1280px-Dique_Cabra_Corral%2C_Salta%2C_Argentina.jpg",
+        "autor": "StellaMarisCR",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Dique_Cabra_Corral,_Salta,_Argentina.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Dique_Cabra_Corral%2C_otra_vista%2C_Salta%2C_Argentina.jpg/1280px-Dique_Cabra_Corral%2C_otra_vista%2C_Salta%2C_Argentina.jpg",
+        "autor": "StellaMarisCR",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Dique_Cabra_Corral,_otra_vista,_Salta,_Argentina.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Embalse_Cabra_Corral_-_Presa_General_Manuel_Belgrano.jpg/1280px-Embalse_Cabra_Corral_-_Presa_General_Manuel_Belgrano.jpg",
+        "autor": "Roberto Ettore",
+        "licencia": "CC BY 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Cabra_Corral_-_Presa_General_Manuel_Belgrano.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Dique_Cabra_Corral_Gran_espejo_de_agua.jpg/1280px-Dique_Cabra_Corral_Gran_espejo_de_agua.jpg",
+        "autor": "Sonia Barboza",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Dique_Cabra_Corral_Gran_espejo_de_agua.jpg"
+      }
+    ]
+  },
+  {
+    "id": "penas-blancas",
+    "nombre": "Peñas Blancas",
+    "nombreComun": "Peñas Blancas",
+    "complejo": "Cabra Corral",
+    "operador": "AES Argentina",
+    "provincia": "Salta",
+    "localidad": "Coronel Moldes",
+    "rio": "Juramento",
+    "cuenca": "Juramento-Salado",
+    "regional": "Norte",
+    "tipo": "Hormigón de gravedad",
+    "alturaM": 12.6,
+    "coronamientoM": 160,
+    "embalseHm3": 2.86,
+    "finalidades": [
+      "Compensador de Cabra Corral",
+      "Riego"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1981,
+    "lat": -25.2956,
+    "lon": -65.29126,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/penas_blancas_aereas_3.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/penas_blancas_5.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/penas-blancas",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Unos kilómetros aguas abajo está Peñas Blancas, un dique compensador. Mide 12,6 metros y su trabajo es regular el agua que suelta Cabra Corral, para que llegue pareja al río y a los canales de riego. Funciona desde 1981.",
+    "fotosLibres": []
+  },
+  {
+    "id": "gral-martin-miguel-de-guemes",
+    "nombre": "Gral. Martín Miguel de Güemes",
+    "nombreComun": "El Tunal",
+    "complejo": "El Tunal",
+    "operador": "AES Argentina",
+    "provincia": "Salta",
+    "localidad": "El Tunal",
+    "rio": "Juramento",
+    "cuenca": "Juramento-Salado",
+    "regional": "Norte",
+    "tipo": "Mixta (materiales sueltos y contrafuertes tipo Noetzli Alcorta)",
+    "alturaM": 37.5,
+    "coronamientoM": 3202,
+    "embalseHm3": 310,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 10.8,
+    "generacionGWh": 50,
+    "anio": 1985,
+    "lat": -25.23482,
+    "lon": -64.47588,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/gral_martin_de_guemes_aerea_15.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/gral_martin_de_guemes_19.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/gral-martin-miguel-de-guemes",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Llegamos a El Tunal, en Salta. Es la última de las tres presas del río Juramento: recibe el agua que ya pasó por Cabra Corral y Peñas Blancas. Se habilitó en 1985, mide 37,5 metros de alto y genera 10,8 megavatios, además de regar y contener crecidas.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Pesca_en_el_r%C3%ADo_juramento_cerca_del_dique_El_Tunal.jpg/1280px-Pesca_en_el_r%C3%ADo_juramento_cerca_del_dique_El_Tunal.jpg",
+        "autor": "melaniae.trapani",
+        "licencia": "CC BY 2.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Pesca_en_el_r%C3%ADo_juramento_cerca_del_dique_El_Tunal.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dr-celestino-gelsi",
+    "nombre": "Dr. Celestino Gelsi",
+    "nombreComun": "El Cadillal",
+    "complejo": "El Cadillal",
+    "operador": "Hidroeléctrica Tucumán S.A.",
+    "provincia": "Tucumán",
+    "localidad": "Tafí Viejo",
+    "rio": "Salí",
+    "cuenca": "Salí-Dulce",
+    "regional": "Norte",
+    "tipo": "Materiales sueltos, zonificada, de eje curvo",
+    "alturaM": 85,
+    "coronamientoM": 503,
+    "embalseHm3": 300,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 13,
+    "generacionGWh": 48,
+    "anio": 1966,
+    "lat": -26.61557,
+    "lon": -65.1925,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/dr.celestino_gelsi_16.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/dr.celestino_gelsi_31.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/dr-celestino-gelsi",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Pasamos a Tucumán. Esta es El Cadillal, sobre el río Salí, cerca de Tafí Viejo. Su presa de eje curvo mide 85 metros y forma un embalse de 300 hectómetros cúbicos. Desde 1966 riega, contiene crecidas y genera 13 megavatios.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Embudo_Dique_Celestino_Gelsi.jpg/1280px-Embudo_Dique_Celestino_Gelsi.jpg",
+        "autor": "Dario Alpern",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embudo_Dique_Celestino_Gelsi.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Dique_Celestino_Gelsi_%281%29.jpg/1280px-Dique_Celestino_Gelsi_%281%29.jpg",
+        "autor": "Dario Alpern",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Dique_Celestino_Gelsi_(1).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Vertiente_del_Dique_Celestino_Gelsi.jpg/1280px-Vertiente_del_Dique_Celestino_Gelsi.jpg",
+        "autor": "Dario Alpern",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Vertiente_del_Dique_Celestino_Gelsi.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/El_Cadillal_-_lago_del_Dique_El_Cadillal_-_Tucum%C3%A1n_-_Argentina.jpg/1280px-El_Cadillal_-_lago_del_Dique_El_Cadillal_-_Tucum%C3%A1n_-_Argentina.jpg",
+        "autor": "Lectornet",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:El_Cadillal_-_lago_del_Dique_El_Cadillal_-_Tucum%C3%A1n_-_Argentina.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pueblo-viejo-derivador-los-reales",
+    "nombre": "Derivador Los Reales",
+    "nombreComun": "Pueblo Viejo – Los Reales",
+    "complejo": "Pueblo Viejo",
+    "operador": "Hidroeléctrica Tucumán S.A.",
+    "provincia": "Tucumán",
+    "localidad": "Capitán Cáceres",
+    "rio": "Los Reales",
+    "cuenca": "Salí-Dulce",
+    "regional": "Norte",
+    "tipo": "Hormigón de gravedad",
+    "alturaM": 9.2,
+    "coronamientoM": 48.5,
+    "embalseHm3": null,
+    "finalidades": [
+      "Derivación para la Central Pueblo Viejo"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1968,
+    "lat": -27.17,
+    "lon": -65.72,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/obra_de_toma_los_reales.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/los_reales_25.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/pueblo-viejo-derivador-los-reales",
+    "coordenadas": "aproximada",
+    "relato": "Al sur de Tucumán, sobre el río Los Reales, está este pequeño derivador de 9 metros. No forma un gran lago: desvía parte del caudal hacia la central Pueblo Viejo, que funciona desde 1968.",
+    "fotosLibres": []
+  },
+  {
+    "id": "pueblo-viejo-derivador-la-horqueta",
+    "nombre": "Derivador La Horqueta",
+    "nombreComun": "Pueblo Viejo – La Horqueta",
+    "complejo": "Pueblo Viejo",
+    "operador": "Hidroeléctrica Tucumán S.A.",
+    "provincia": "Tucumán",
+    "localidad": "Capitán Cáceres",
+    "rio": "La Horqueta",
+    "cuenca": "Salí-Dulce",
+    "regional": "Norte",
+    "tipo": "Hormigón de gravedad",
+    "alturaM": 5,
+    "coronamientoM": 49.15,
+    "embalseHm3": null,
+    "finalidades": [
+      "Derivación para la Central Pueblo Viejo"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1968,
+    "lat": -27.2,
+    "lon": -65.76,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/derivador_la_horqueta.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/derivador_la_horqueta_2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/pueblo-viejo-derivador-la-horqueta",
+    "coordenadas": "aproximada",
+    "relato": "Muy cerca, sobre el río La Horqueta, otro derivador de apenas 5 metros cumple la misma tarea: llevar agua a la central Pueblo Viejo. Las dos tomas trabajan juntas desde 1968.",
+    "fotosLibres": []
+  },
+  {
+    "id": "escaba",
+    "nombre": "Escaba",
+    "nombreComun": "Escaba",
+    "complejo": "Escaba",
+    "operador": "Hidroeléctrica Tucumán S.A.",
+    "provincia": "Tucumán",
+    "localidad": "Villa Alberdi",
+    "rio": "Marapa",
+    "cuenca": "Salí-Dulce",
+    "regional": "Norte",
+    "tipo": "Contrafuertes, tipo Ambursen",
+    "alturaM": 83,
+    "coronamientoM": 232,
+    "embalseHm3": 142.5,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 18,
+    "generacionGWh": 69,
+    "anio": 1948,
+    "lat": -27.65825,
+    "lon": -65.76286,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/escaba.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/escaba_1.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/escaba",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Volvemos a Tucumán, al río Marapa. Escaba es una de las presas más antiguas del país: se habilitó en 1948. Es de contrafuertes, mide 83 metros y genera 18 megavatios, además de regar y contener crecidas.",
+    "fotosLibres": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Lago_Dique_Escaba_Tuc.jpg",
+        "autor": "PabloAlberdi",
+        "licencia": "CC BY 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Lago_Dique_Escaba_Tuc.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Dique_Escaba%2C_Departamento_Juan_Bautista_Alberdi%2C_Tucum%C3%A1n.jpg/1280px-Dique_Escaba%2C_Departamento_Juan_Bautista_Alberdi%2C_Tucum%C3%A1n.jpg",
+        "autor": "PabloAlberdi",
+        "licencia": "CC BY 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Dique_Escaba,_Departamento_Juan_Bautista_Alberdi,_Tucum%C3%A1n.jpg"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a1/DiqueEscabaVistas.jpg",
+        "autor": null,
+        "licencia": "CC BY 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:DiqueEscabaVistas.jpg"
+      }
+    ]
+  },
+  {
+    "id": "batiruana",
+    "nombre": "Batiruana",
+    "nombreComun": "Batiruana",
+    "complejo": "Escaba",
+    "operador": "Hidroeléctrica Tucumán S.A.",
+    "provincia": "Tucumán",
+    "localidad": "Villa Alberdi",
+    "rio": "Marapa",
+    "cuenca": "Salí-Dulce",
+    "regional": "Norte",
+    "tipo": "Contrafuertes, tipo Noetzli Alcorta",
+    "alturaM": 43,
+    "coronamientoM": 85,
+    "embalseHm3": 0.44,
+    "finalidades": [
+      "Compensador de Escaba",
+      "Riego"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1955,
+    "lat": -27.66,
+    "lon": -65.73,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/batiruana_3.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/batiruana_7.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/batiruana",
+    "coordenadas": "aproximada",
+    "relato": "Justo aguas abajo de Escaba está Batiruana, de 1955. Mide 43 metros y su embalse es muy chico, porque su función es compensar: recibe el agua que suelta Escaba y la entrega de forma regular para el riego.",
+    "fotosLibres": []
+  },
+  {
+    "id": "rio-hondo",
+    "nombre": "Río Hondo",
+    "nombreComun": "Río Hondo",
+    "complejo": "Río Hondo",
+    "operador": "Hidroeléctrica Río Hondo S.A.",
+    "provincia": "Santiago del Estero",
+    "localidad": "Termas de Río Hondo",
+    "rio": "Dulce",
+    "cuenca": "Salí-Dulce",
+    "regional": "Norte",
+    "tipo": "Mixta (materiales sueltos y contrafuertes tipo Marcello)",
+    "alturaM": 31,
+    "coronamientoM": 4347,
+    "embalseHm3": 1740,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 17,
+    "generacionGWh": 99,
+    "anio": 1967,
+    "lat": -27.52504,
+    "lon": -64.88476,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/dsc_3816-pano-edit4k.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/dsc_3878-pano-edit4k.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/rio-hondo",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Ya en Santiago del Estero, junto a la ciudad de Termas de Río Hondo, está esta presa sobre el río Dulce. Su coronamiento se extiende más de cuatro kilómetros y su embalse guarda 1.740 hectómetros cúbicos. Desde 1967 riega, contiene crecidas y genera 17 megavatios.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Dique_Frontal_de_R%C3%ADo_Hondo_desde_la_Costanera.JPG/1280px-Dique_Frontal_de_R%C3%ADo_Hondo_desde_la_Costanera.JPG",
+        "autor": "Pertile",
+        "licencia": "CC BY-SA 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Dique_Frontal_de_R%C3%ADo_Hondo_desde_la_Costanera.JPG"
+      }
+    ]
+  },
+  {
+    "id": "los-quiroga",
+    "nombre": "Los Quiroga",
+    "nombreComun": "Los Quiroga",
+    "complejo": "C.H. Los Quiroga",
+    "operador": "Hidroeléctrica Río Hondo S.A.",
+    "provincia": "Santiago del Estero",
+    "localidad": "La Dársena",
+    "rio": "Dulce",
+    "cuenca": "Salí-Dulce",
+    "regional": "Norte",
+    "tipo": null,
+    "alturaM": null,
+    "coronamientoM": null,
+    "embalseHm3": null,
+    "finalidades": [
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 2,
+    "generacionGWh": 8.6,
+    "anio": 1963,
+    "lat": -27.65217,
+    "lon": -64.36986,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/los_quiroga_11.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/los_quiroga_4.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-norte/los-quiroga",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Siguiendo el río Dulce, cerca de La Dársena, está Los Quiroga. Su central es la más chica de este recorrido: genera 2 megavatios. Funciona desde 1963 y aprovecha el agua que ya pasó por Río Hondo.",
+    "fotosLibres": []
+  },
+  {
+    "id": "agua-del-toro",
+    "nombre": "Agua del Toro",
+    "nombreComun": "Agua del Toro",
+    "complejo": "Agua del Toro",
+    "operador": "Hidroeléctrica Diamante – Pampa Energía S.A.",
+    "provincia": "Mendoza",
+    "localidad": "25 de Mayo",
+    "rio": "Diamante",
+    "cuenca": "Diamante",
+    "regional": "Cuyo Centro",
+    "tipo": "Arco simétrico de doble curvatura",
+    "alturaM": 118.5,
+    "coronamientoM": 325,
+    "embalseHm3": 325,
+    "finalidades": [
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 150,
+    "generacionGWh": 252,
+    "anio": 1976,
+    "lat": -34.58411,
+    "lon": -69.03588,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/aguadeltoro1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/agua_del_toro2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-cuyo-centro/agua-del-toro",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Saltamos a Mendoza, al río Diamante. Agua del Toro es una presa de arco de doble curvatura, una forma que usa la resistencia de las paredes del cañón. Mide 118 metros, funciona desde 1976 y genera 150 megavatios.",
+    "fotosLibres": []
+  },
+  {
+    "id": "los-reyunos",
+    "nombre": "Los Reyunos",
+    "nombreComun": "Los Reyunos",
+    "complejo": "Los Reyunos",
+    "operador": "Hidroeléctrica Diamante – Pampa Energía S.A.",
+    "provincia": "Mendoza",
+    "localidad": "25 de Mayo",
+    "rio": "Diamante",
+    "cuenca": "Diamante",
+    "regional": "Cuyo Centro",
+    "tipo": "Materiales sueltos, zonificada",
+    "alturaM": 136,
+    "coronamientoM": 295,
+    "embalseHm3": 260,
+    "finalidades": [
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 224,
+    "generacionGWh": 302,
+    "anio": 1980,
+    "lat": -34.60235,
+    "lon": -68.64051,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/reyunos1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/los_reyunos2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-cuyo-centro/los-reyunos",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Aguas abajo en el Diamante está Los Reyunos, de 1980. Con 136 metros es de las más altas del recorrido, y su central genera 224 megavatios, la mayor potencia del río. El agua también se usa para riego.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Los_Reyunos.jpg/1280px-Los_Reyunos.jpg",
+        "autor": "Roberto Fiadone",
+        "licencia": "CC BY-SA 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Los_Reyunos.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Embalse_Los_Reyunos_03.jpg/1280px-Embalse_Los_Reyunos_03.jpg",
+        "autor": "Carloszelayeta",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Los_Reyunos_03.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Embalse_Los_Reyunos_02.jpg/1280px-Embalse_Los_Reyunos_02.jpg",
+        "autor": "Carloszelayeta",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Los_Reyunos_02.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Embalse_Los_Reyunos_%28panorama%29.jpg/1280px-Embalse_Los_Reyunos_%28panorama%29.jpg",
+        "autor": "Pablo D. Flores",
+        "licencia": "CC BY-SA 2.5",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Los_Reyunos_(panorama).jpg"
+      }
+    ]
+  },
+  {
+    "id": "el-tigre",
+    "nombre": "El Tigre",
+    "nombreComun": "El Tigre",
+    "complejo": "El Tigre",
+    "operador": "Hidroeléctrica Diamante – Pampa Energía S.A.",
+    "provincia": "Mendoza",
+    "localidad": "25 de Mayo",
+    "rio": "Diamante",
+    "cuenca": "Diamante",
+    "regional": "Cuyo Centro",
+    "tipo": "Mixta (materiales sueltos y hormigón de gravedad)",
+    "alturaM": 48.5,
+    "coronamientoM": 680,
+    "embalseHm3": 7,
+    "finalidades": [
+      "Compensador",
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 14,
+    "generacionGWh": 50,
+    "anio": 1983,
+    "lat": -34.60894,
+    "lon": -68.61352,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/el_tigre1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/el_tigre_aerea_3.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-cuyo-centro/el-tigre",
+    "coordenadas": "OpenStreetMap",
+    "relato": "El Tigre cierra la cadena del Diamante. Es un compensador de 1983: regula el agua que sale de Los Reyunos antes de que siga hacia los oasis de riego de San Rafael. Además genera 14 megavatios.",
+    "fotosLibres": []
+  },
+  {
+    "id": "el-nihuil",
+    "nombre": "El Nihuil",
+    "nombreComun": "El Nihuil (Nihuil I)",
+    "complejo": "Nihuil I",
+    "operador": "Hidroelectricidad Mendocina S.A. (HEMSA)",
+    "provincia": "Mendoza",
+    "localidad": "El Nihuil",
+    "rio": "Atuel",
+    "cuenca": "Atuel",
+    "regional": "Cuyo Centro",
+    "tipo": "Hormigón de gravedad",
+    "alturaM": 25,
+    "coronamientoM": 465,
+    "embalseHm3": 259,
+    "finalidades": [
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 74,
+    "generacionGWh": 296,
+    "anio": 1947,
+    "lat": -35.02659,
+    "lon": -68.67828,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/el_nihuil_1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/el_nihuil_2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-cuyo-centro/el-nihuil",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Este es El Nihuil, el primer aprovechamiento del Atuel y la presa más antigua del recorrido: se habilitó en 1947. Forma un embalse de 259 hectómetros cúbicos que alimenta las centrales del cañón y el riego. Genera 74 megavatios.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/30.Dique_Nihuil.jpg/1280px-30.Dique_Nihuil.jpg",
+        "autor": "Elemaki",
+        "licencia": "CC BY 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:30.Dique_Nihuil.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Represa_El_Nihuil.jpg/1280px-Represa_El_Nihuil.jpg",
+        "autor": "Arianza1",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Represa_El_Nihuil.jpg"
+      }
+    ]
+  },
+  {
+    "id": "aisol",
+    "nombre": "Aisol",
+    "nombreComun": "Aisol (Nihuil II)",
+    "complejo": "Nihuil II",
+    "operador": "Hidroelectricidad Mendocina S.A. (HEMSA)",
+    "provincia": "Mendoza",
+    "localidad": null,
+    "rio": "Atuel",
+    "cuenca": "Atuel",
+    "regional": "Cuyo Centro",
+    "tipo": "Hormigón de gravedad",
+    "alturaM": 40,
+    "coronamientoM": 85,
+    "embalseHm3": 0.71,
+    "finalidades": [
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 136.2,
+    "generacionGWh": 316,
+    "anio": 1968,
+    "lat": -34.93,
+    "lon": -68.58,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/aisol_12.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/aisol_19.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-cuyo-centro/aisol",
+    "coordenadas": "aproximada",
+    "relato": "Aisol, o Nihuil II, está en pleno cañón del Atuel. Su embalse es diminuto, pero su central es la más potente del río: 136 megavatios, aprovechando el desnivel del cañón. Funciona desde 1968.",
+    "fotosLibres": []
+  },
+  {
+    "id": "valle-grande",
+    "nombre": "Valle Grande",
+    "nombreComun": "Valle Grande (Nihuil IV)",
+    "complejo": "Nihuil IV",
+    "operador": "Hidroelectricidad Mendocina S.A. (HEMSA)",
+    "provincia": "Mendoza",
+    "localidad": "San Rafael",
+    "rio": "Atuel",
+    "cuenca": "Atuel",
+    "regional": "Cuyo Centro",
+    "tipo": "Contrafuertes, tipo Noetzli Alcorta",
+    "alturaM": 115,
+    "coronamientoM": 300,
+    "embalseHm3": 168,
+    "finalidades": [
+      "Riego",
+      "Generación eléctrica",
+      "Turismo y recreación"
+    ],
+    "potenciaMW": 25,
+    "generacionGWh": 87,
+    "anio": 1965,
+    "lat": -34.83283,
+    "lon": -68.51673,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/valle_grande_9.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/valle_grande_4.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-cuyo-centro/valle-grande",
+    "coordenadas": "OpenStreetMap",
+    "relato": "En el río Atuel, cerca de San Rafael, está Valle Grande, también llamado Nihuil IV. Es una presa de contrafuertes de 115 metros, de 1965, y su embalse es un destino turístico conocido. Genera 25 megavatios.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Embalse_Valle_Grande_-_San_Rafael_%2827294537131%29.jpg/1280px-Embalse_Valle_Grande_-_San_Rafael_%2827294537131%29.jpg",
+        "autor": "Miguel",
+        "licencia": "CC BY-SA 2.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Valle_Grande_-_San_Rafael_(27294537131).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Embalse_Valle_Grande-_San_Rafael_-_Mendoza_2023.jpg/1280px-Embalse_Valle_Grande-_San_Rafael_-_Mendoza_2023.jpg",
+        "autor": "Poxirambo",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Valle_Grande-_San_Rafael_-_Mendoza_2023.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Embalse_Valle_Grande_%2827266775982%29.jpg/1280px-Embalse_Valle_Grande_%2827266775982%29.jpg",
+        "autor": "Miguel",
+        "licencia": "CC BY-SA 2.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Valle_Grande_(27266775982).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Embalse_Valle_Grande_%2827266878052%29.jpg/1280px-Embalse_Valle_Grande_%2827266878052%29.jpg",
+        "autor": "Miguel",
+        "licencia": "CC BY-SA 2.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Embalse_Valle_Grande_(27266878052).jpg"
+      }
+    ]
+  },
+  {
+    "id": "portezuelo-grande",
+    "nombre": "Portezuelo Grande",
+    "nombreComun": "Portezuelo Grande",
+    "complejo": "Cerros Colorados",
+    "operador": "Edison Inversiones S.A.U.",
+    "provincia": "Neuquén",
+    "localidad": "Añelo",
+    "rio": "Neuquén",
+    "cuenca": "Neuquén",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos, homogénea, con vertedero de hormigón",
+    "alturaM": 12,
+    "coronamientoM": 3250,
+    "embalseHm3": 9,
+    "finalidades": [
+      "Atenuación de crecidas por derivación"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1972,
+    "lat": -38.45809,
+    "lon": -68.9373,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/portezuelo_grande1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/portezuelo_grande2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/portezuelo-grande",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Llegamos al río Neuquén. Portezuelo Grande, de 1972, es la puerta de entrada del complejo Cerros Colorados: cuando el río crece, desvía su caudal hacia el lago Los Barreales para proteger a las ciudades de aguas abajo.",
+    "fotosLibres": []
+  },
+  {
+    "id": "loma-de-la-lata",
+    "nombre": "Loma de la Lata",
+    "nombreComun": "Loma de la Lata",
+    "complejo": "Cerros Colorados",
+    "operador": "Edison Inversiones S.A.U.",
+    "provincia": "Neuquén",
+    "localidad": "Centenario",
+    "rio": "Neuquén",
+    "cuenca": "Neuquén",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos, zonificada",
+    "alturaM": 16,
+    "coronamientoM": 1500,
+    "embalseHm3": 28164,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Regulación para riego"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1974,
+    "lat": -38.54697,
+    "lon": -68.61525,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/loma_de_la_lata_aereas_1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/loma-de-la-lata_27.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/loma-de-la-lata",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Loma de la Lata regula el paso del agua entre los lagos Los Barreales y Mari Menuco. Es un dique de 16 metros, de 1974, clave para el control de crecidas del río Neuquén y para el riego del Alto Valle.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Cerros_colorados_res.jpg/1280px-Cerros_colorados_res.jpg",
+        "autor": "Image Science & Analysis Laboratory, NASA Johnson Space Center",
+        "licencia": "Public domain",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Cerros_colorados_res.jpg"
+      }
+    ]
+  },
+  {
+    "id": "planicie-banderita",
+    "nombre": "Planicie Banderita",
+    "nombreComun": "Planicie Banderita",
+    "complejo": "Cerros Colorados",
+    "operador": "Edison Inversiones S.A.U.",
+    "provincia": "Neuquén",
+    "localidad": "San Patricio del Chañar",
+    "rio": "Neuquén",
+    "cuenca": "Neuquén",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos, zonificada",
+    "alturaM": 35.5,
+    "coronamientoM": 350,
+    "embalseHm3": 28162,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Generación eléctrica",
+      "Turismo y recreación"
+    ],
+    "potenciaMW": 450,
+    "generacionGWh": 1510,
+    "anio": 1977,
+    "lat": -38.56121,
+    "lon": -68.47479,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/planicie-banderita1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/planicie-banderita2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/planicie-banderita",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Planicie Banderita es la central del complejo. El lago Mari Menuco está unos 69 metros más alto que el río, y esa caída mueve turbinas por 450 megavatios. Después, el agua vuelve al cauce del Neuquén. Funciona desde 1977.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Central_hidroel%C3%A9trica_Planicie_Banderitas.jpg/1280px-Central_hidroel%C3%A9trica_Planicie_Banderitas.jpg",
+        "autor": "Salepera",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Central_hidroel%C3%A9trica_Planicie_Banderitas.jpg"
+      }
+    ]
+  },
+  {
+    "id": "mari-menuco",
+    "nombre": "Marí Menuco",
+    "nombreComun": "Marí Menuco",
+    "complejo": "Cerros Colorados",
+    "operador": "Edison Inversiones S.A.U.",
+    "provincia": "Neuquén",
+    "localidad": "Centenario",
+    "rio": "Neuquén",
+    "cuenca": "Neuquén",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos con núcleo de arenas arcillosas",
+    "alturaM": 16,
+    "coronamientoM": 900,
+    "embalseHm3": 28164,
+    "finalidades": [
+      "Atenuación de crecidas"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1974,
+    "lat": -38.58056,
+    "lon": -68.69043,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/mari_menuco_1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/mari_menuco_3.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/mari-menuco",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Este dique cierra el lago Mari Menuco. Junto con Los Barreales forma un sistema de embalses de más de 28.000 hectómetros cúbicos, uno de los mayores del país. Funciona desde 1974.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Neuqu%C3%A9n_Mari_Menuco.jpg/1280px-Neuqu%C3%A9n_Mari_Menuco.jpg",
+        "autor": "Solc242",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Neuqu%C3%A9n_Mari_Menuco.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Neuqu%C3%A9n-_Mari_Menuco_Atardecer.jpg/1280px-Neuqu%C3%A9n-_Mari_Menuco_Atardecer.jpg",
+        "autor": "Solc242",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Neuqu%C3%A9n-_Mari_Menuco_Atardecer.jpg"
+      }
+    ]
+  },
+  {
+    "id": "el-chanar",
+    "nombre": "El Chañar",
+    "nombreComun": "El Chañar",
+    "complejo": "Cerros Colorados",
+    "operador": "Edison Inversiones S.A.U.",
+    "provincia": "Neuquén",
+    "localidad": "San Patricio del Chañar",
+    "rio": "Neuquén",
+    "cuenca": "Neuquén",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos, zonificada, con pantalla de hormigón",
+    "alturaM": 17.5,
+    "coronamientoM": 6700,
+    "embalseHm3": 34,
+    "finalidades": [
+      "Compensador de Planicie Banderita",
+      "Riego"
+    ],
+    "potenciaMW": null,
+    "generacionGWh": null,
+    "anio": 1979,
+    "lat": -38.58311,
+    "lon": -68.40092,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/el-chanar1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/el-chanar2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/el-chanar",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Unos diez kilómetros aguas abajo está El Chañar, de 1979. Su coronamiento mide 6,7 kilómetros, el más largo del recorrido. Es un compensador: regula el caudal que entrega Planicie Banderita y alimenta el riego.",
+    "fotosLibres": []
+  },
+  {
+    "id": "alicura",
+    "nombre": "Alicurá",
+    "nombreComun": "Alicurá",
+    "complejo": "Alicurá",
+    "operador": "Edison Inversiones S.A.U.",
+    "provincia": "Neuquén y Río Negro",
+    "localidad": "San Carlos de Bariloche",
+    "rio": "Limay",
+    "cuenca": "Limay",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos, zonificada",
+    "alturaM": 135,
+    "coronamientoM": 850,
+    "embalseHm3": 3215,
+    "finalidades": [
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 1000,
+    "generacionGWh": 2360,
+    "anio": 1984,
+    "lat": -40.58588,
+    "lon": -70.75115,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/alicura1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/alicura2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/alicura",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Alicurá es la primera gran presa del Limay. Sus 135 metros forman un embalse de 3.215 hectómetros cúbicos, y desde 1984 genera 1.000 megavatios. Desde acá, el agua del Limay pasa por cuatro presas más antes de llegar al río Negro.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Alicura231.JPG/1280px-Alicura231.JPG",
+        "autor": "Claudio Elias",
+        "licencia": "Public domain",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Alicura231.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Alicura234.JPG/1280px-Alicura234.JPG",
+        "autor": "Claudio Elias",
+        "licencia": "Public domain",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Alicura234.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Alicura230.JPG/1280px-Alicura230.JPG",
+        "autor": "Claudio Elias",
+        "licencia": "Public domain",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Alicura230.JPG"
+      }
+    ]
+  },
+  {
+    "id": "piedra-del-aguila",
+    "nombre": "Piedra del Águila",
+    "nombreComun": "Piedra del Águila",
+    "complejo": "Piedra del Águila",
+    "operador": "Central Puerto S.A.",
+    "provincia": "Neuquén y Río Negro",
+    "localidad": "Piedra del Águila",
+    "rio": "Limay",
+    "cuenca": "Limay",
+    "regional": "Comahue",
+    "tipo": "Hormigón de gravedad",
+    "alturaM": 172,
+    "coronamientoM": 820,
+    "embalseHm3": 12400,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 1400,
+    "generacionGWh": 5500,
+    "anio": 1993,
+    "lat": -40.19022,
+    "lon": -69.99187,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/pda1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/pda2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/piedra-del-aguila",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Piedra del Águila es la gigante del Limay: con 172 metros es la presa más alta del recorrido y, con 1.400 megavatios, la de mayor potencia. Es de hormigón de gravedad y funciona desde 1993.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Represa_Piedra_del_Aguila.jpg/1280px-Represa_Piedra_del_Aguila.jpg",
+        "autor": "Claudio Elias",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Represa_Piedra_del_Aguila.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/ISS010-E-18725_Limay_River%2C_Piedra_del_%C3%81guila.jpg/1280px-ISS010-E-18725_Limay_River%2C_Piedra_del_%C3%81guila.jpg",
+        "autor": "ISS crew",
+        "licencia": "Public domain",
+        "pagina": "https://commons.wikimedia.org/wiki/File:ISS010-E-18725_Limay_River,_Piedra_del_%C3%81guila.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pichi-picun-leufu",
+    "nombre": "Pichi Picún Leufú",
+    "nombreComun": "Pichi Picún Leufú",
+    "complejo": "Pichi Picún Leufú",
+    "operador": "Hidroeléctrica Pichi Picún Leufú – Pampa Energía S.A.",
+    "provincia": "Neuquén y Río Negro",
+    "localidad": "Piedra del Águila",
+    "rio": "Limay",
+    "cuenca": "Limay",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos con pantalla de hormigón",
+    "alturaM": 45,
+    "coronamientoM": 1045,
+    "embalseHm3": 197,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 261,
+    "generacionGWh": 1080,
+    "anio": 1999,
+    "lat": -40.01149,
+    "lon": -69.9913,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/pichi-picun-leufu1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/pichi-picun-leufu2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/pichi-picun-leufu",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Pichi Picún Leufú es la más nueva del recorrido: se habilitó en 1999. Mide 45 metros, está entre Piedra del Águila y El Chocón, y genera 261 megavatios.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pichi_Pic%C3%BAn_Leuf%C3%BA.jpg/1280px-Pichi_Pic%C3%BAn_Leuf%C3%BA.jpg",
+        "autor": "Daniel Peppes Gauer",
+        "licencia": "CC BY 2.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Pichi_Pic%C3%BAn_Leuf%C3%BA.jpg"
+      }
+    ]
+  },
+  {
+    "id": "el-chocon",
+    "nombre": "El Chocón",
+    "nombreComun": "El Chocón",
+    "complejo": "El Chocón",
+    "operador": "BML Inversora S.A.U.",
+    "provincia": "Neuquén y Río Negro",
+    "localidad": "Villa El Chocón",
+    "rio": "Limay",
+    "cuenca": "Limay",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos, zonificada",
+    "alturaM": 86,
+    "coronamientoM": 2250,
+    "embalseHm3": 20600,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Generación eléctrica",
+      "Turismo y recreación"
+    ],
+    "potenciaMW": 1200,
+    "generacionGWh": 3350,
+    "anio": 1972,
+    "lat": -39.26899,
+    "lon": -68.75745,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/el-chocon1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/el-chocon2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/el-chocon",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Este es El Chocón, de 1972, la obra que formó el lago Ezequiel Ramos Mexía. Su embalse guarda 20.600 hectómetros cúbicos, el mayor de los que tienen una sola presa en este recorrido, y su central genera 1.200 megavatios.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Central_Hidroel%C3%A9ctrica_El_Choc%C3%B3n_2007-Sep.jpg/1280px-Central_Hidroel%C3%A9ctrica_El_Choc%C3%B3n_2007-Sep.jpg",
+        "autor": "Aibdescalzo",
+        "licencia": "Public domain",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Central_Hidroel%C3%A9ctrica_El_Choc%C3%B3n_2007-Sep.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Represa_El_Choc%C3%B3n.jpg/1280px-Represa_El_Choc%C3%B3n.jpg",
+        "autor": "Roberto Castro",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Represa_El_Choc%C3%B3n.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Vertedero_de_la_represa_El_Choc%C3%B3n_3.jpg/1280px-Vertedero_de_la_represa_El_Choc%C3%B3n_3.jpg",
+        "autor": "Dario Alpern",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Vertedero_de_la_represa_El_Choc%C3%B3n_3.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Obra_de_toma_de_la_represa_El_Choc%C3%B3n.jpg/1280px-Obra_de_toma_de_la_represa_El_Choc%C3%B3n.jpg",
+        "autor": "Dario Alpern",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Obra_de_toma_de_la_represa_El_Choc%C3%B3n.jpg"
+      }
+    ]
+  },
+  {
+    "id": "arroyito",
+    "nombre": "Arroyito",
+    "nombreComun": "Arroyito",
+    "complejo": "Arroyito",
+    "operador": "BML Inversora S.A.U.",
+    "provincia": "Neuquén y Río Negro",
+    "localidad": "Senillosa",
+    "rio": "Limay",
+    "cuenca": "Limay",
+    "regional": "Comahue",
+    "tipo": "Materiales sueltos, homogénea",
+    "alturaM": 26,
+    "coronamientoM": 3500,
+    "embalseHm3": 361,
+    "finalidades": [
+      "Compensador de El Chocón",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 120,
+    "generacionGWh": 720,
+    "anio": 1983,
+    "lat": -39.11556,
+    "lon": -68.5807,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/arroyito1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/arroyito2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-comahue/arroyito",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Arroyito, de 1983, es la última presa del río Limay antes de que se junte con el Neuquén y formen el río Negro. Compensa el agua que suelta El Chocón y genera 120 megavatios.",
+    "fotosLibres": []
+  },
+  {
+    "id": "futaleufu",
+    "nombre": "Futaleufú",
+    "nombreComun": "Futaleufú",
+    "complejo": "Futaleufú",
+    "operador": "Hidroeléctrica Futaleufú S.A.",
+    "provincia": "Chubut",
+    "localidad": "Trevelin",
+    "rio": "Futaleufú",
+    "cuenca": "Futaleufú",
+    "regional": "Patagonia",
+    "tipo": "Materiales sueltos, zonificada",
+    "alturaM": 120,
+    "coronamientoM": 600,
+    "embalseHm3": 5700,
+    "finalidades": [
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 472,
+    "generacionGWh": 2560,
+    "anio": 1978,
+    "lat": -43.10938,
+    "lon": -71.65134,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/futaleufu1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/futaleufu2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-patagonia/futaleufu",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Bajamos a Chubut, cerca de Trevelin. Futaleufú, de 1978, mide 120 metros y forma un embalse de 5.700 hectómetros cúbicos entre montañas. Genera 472 megavatios, que se llevan hasta la planta de aluminio de Puerto Madryn.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Futaleufuch.jpg/1280px-Futaleufuch.jpg",
+        "autor": "Nestor Galina",
+        "licencia": "CC BY 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Futaleufuch.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Pared%C3%B3n_de_la_Presa_de_Futaleuf%C3%BA%2C_Chubut%2C_Argentina_-_panoramio.jpg/1280px-Pared%C3%B3n_de_la_Presa_de_Futaleuf%C3%BA%2C_Chubut%2C_Argentina_-_panoramio.jpg",
+        "autor": "rodoluca",
+        "licencia": "CC BY-SA 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Pared%C3%B3n_de_la_Presa_de_Futaleuf%C3%BA,_Chubut,_Argentina_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Serpentina_de_acceso_a_la_Presa_de_Futaleuf%C3%BA%2C_Chubut%2C_Argentina_-_panoramio.jpg/1280px-Serpentina_de_acceso_a_la_Presa_de_Futaleuf%C3%BA%2C_Chubut%2C_Argentina_-_panoramio.jpg",
+        "autor": "rodoluca",
+        "licencia": "CC BY-SA 3.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Serpentina_de_acceso_a_la_Presa_de_Futaleuf%C3%BA,_Chubut,_Argentina_-_panoramio.jpg"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Complejo_Hidroel%C3%A9ctrico_Futaleuf%C3%BA.jpg",
+        "autor": "Clauh2011",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Complejo_Hidroel%C3%A9ctrico_Futaleuf%C3%BA.jpg"
+      }
+    ]
+  },
+  {
+    "id": "florentino-ameghino",
+    "nombre": "Florentino Ameghino",
+    "nombreComun": "Florentino Ameghino",
+    "complejo": "Florentino Ameghino",
+    "operador": "Hidroeléctrica Ameghino S.A.",
+    "provincia": "Chubut",
+    "localidad": "Florentino Ameghino",
+    "rio": "Chubut",
+    "cuenca": "Chubut",
+    "regional": "Patagonia",
+    "tipo": "Hormigón aligerado, tipo Noetzli Alcorta",
+    "alturaM": 113,
+    "coronamientoM": 255,
+    "embalseHm3": 1855,
+    "finalidades": [
+      "Atenuación de crecidas",
+      "Riego",
+      "Generación eléctrica"
+    ],
+    "potenciaMW": 60,
+    "generacionGWh": 178,
+    "anio": 1968,
+    "lat": -43.69997,
+    "lon": -66.48363,
+    "imagenes": [
+      "https://www.argentina.gob.ar/sites/default/files/fameghino1.jpg",
+      "https://www.argentina.gob.ar/sites/default/files/fameghino2.jpg"
+    ],
+    "fuente": "https://www.argentina.gob.ar/orsep/registro-de-presas-fiscalizadas/regional-patagonia/florentino-ameghino",
+    "coordenadas": "OpenStreetMap",
+    "relato": "Terminamos en el río Chubut. Florentino Ameghino, de 1968, es una presa de hormigón de 113 metros en un cañón de roca roja. Controla crecidas, riega el valle inferior del Chubut y genera 60 megavatios. Aquí termina el recorrido.",
+    "fotosLibres": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/DIQUE_FLORENTINO_AMEGHINO.jpg/1280px-DIQUE_FLORENTINO_AMEGHINO.jpg",
+        "autor": "Gonce",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:DIQUE_FLORENTINO_AMEGHINO.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Diqueameghino1.jpg/1280px-Diqueameghino1.jpg",
+        "autor": "Antur",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Diqueameghino1.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dique_Florentino_Ameghino.JPG/1280px-Dique_Florentino_Ameghino.JPG",
+        "autor": "Katherinemanquepan",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:Dique_Florentino_Ameghino.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/MUR_AMEGHINO.jpg/1280px-MUR_AMEGHINO.jpg",
+        "autor": "Gonce",
+        "licencia": "CC BY-SA 4.0",
+        "pagina": "https://commons.wikimedia.org/wiki/File:MUR_AMEGHINO.jpg"
+      }
+    ]
+  }
+]

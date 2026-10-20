@@ -1,0 +1,200 @@
+/* Represas de Argentina — estilos globales, mobile-first.
+   Primero se escribe para el celular; los @media (min-width) agregan lo de pantallas grandes. */
+
+:root {
+  --bg: #f2f5f4;
+  --surface: #ffffff;
+  --surface-2: #e8eeec;
+  --ink: #122126;
+  --muted: #536469;
+  --line: #d5dddc;
+  --agua: #0a6c88;          /* acento principal: agua */
+  --agua-suave: #dcedf1;
+  --energia: #c97f00;       /* represas que generan electricidad */
+  --sin-energia: #5d7f8a;   /* represas sin generación (riego, compensadoras) */
+  --hormigon: #857660;      /* detalles secundarios */
+  --sombra: 0 8px 28px rgb(18 33 38 / 0.16);
+
+  --f-display: 'Archivo', 'Arial Narrow', system-ui, sans-serif;
+  --f-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+
+  --header-h: 56px;
+  --radio: 14px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1316;
+    --surface: #111c20;
+    --surface-2: #17252a;
+    --ink: #e3ebeb;
+    --muted: #91a3a7;
+    --line: #22333a;
+    --agua: #5bc4de;
+    --agua-suave: #12313a;
+    --energia: #f0b33f;
+    --sin-energia: #8fb3be;
+    --hormigon: #b8a88e;
+    --sombra: 0 10px 32px rgb(0 0 0 / 0.5);
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px; /* 16 px mínimo: evita el zoom automático de iPhone en inputs */
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--agua); }
+:focus-visible { outline: 2px solid var(--agua); outline-offset: 2px; }
+
+h1, h2, h3 {
+  font-family: var(--f-display);
+  font-stretch: 85%;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* ---------- Encabezado ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right));
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.marca svg { flex-shrink: 0; }
+.site-nav { display: flex; gap: 2px; }
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;           /* zona táctil */
+  padding-inline: 10px;
+  border-radius: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+.site-nav a[aria-current='page'] { color: var(--agua); background: var(--agua-suave); }
+.site-nav a:hover { color: var(--ink); }
+
+/* En pantallas muy chicas se oculta el texto largo de la marca */
+.marca .largo { display: none; }
+@media (min-width: 420px) { .marca .largo { display: inline; } }
+
+/* ---------- Páginas de contenido ---------- */
+.contenido {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-block: 28px 64px;
+  padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right));
+}
+.contenido > p, .lectura p, .lectura li { max-width: 68ch; }
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--agua);
+  margin: 0 0 6px;
+}
+.contenido h1 { font-size: clamp(32px, 7vw, 54px); margin: 0 0 12px; font-weight: 800; }
+.contenido h2 { font-size: clamp(22px, 4vw, 28px); margin: 36px 0 10px; font-weight: 700; }
+.lead { font-size: 18px; color: var(--muted); margin: 0; }
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding-inline: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--agua);
+  background: var(--agua);
+  color: var(--bg);
+  font: 600 15px var(--f-body);
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton.sec { background: transparent; color: var(--agua); }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--agua-suave);
+  color: var(--ink);
+  font-size: 13px;
+}
+
+/* Tabla de datos técnicos */
+.ficha-tabla { width: 100%; border-collapse: collapse; font-size: 15px; }
+.ficha-tabla th, .ficha-tabla td { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ficha-tabla th { color: var(--muted); font-weight: 500; width: 42%; padding-right: 12px; }
+.ficha-tabla td { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  padding-block: 20px 28px;
+  padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right));
+  padding-bottom: calc(28px + env(safe-area-inset-bottom));
+}
+.site-footer p { max-width: 980px; margin: 0 auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Celulares angostos: el menú de 4 secciones entra junto a la marca */
+@media (max-width: 400px) {
+  .site-header { gap: 4px; }
+  .site-nav a { padding-inline: 6px; font-size: 14px; }
+  .marca { font-size: 16px; gap: 6px; }
+}
+@media (max-width: 340px) {
+  .marca span { display: none; }
+}

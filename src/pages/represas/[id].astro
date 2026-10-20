@@ -1,0 +1,150 @@
+---
+import Base from '../../layouts/Base.astro';
+import { fotosDe, generaEnergia, notaDe, num, represas, vecinas, type Represa } from '../../data/represas';
+
+export function getStaticPaths() {
+  return represas.map(r => ({ params: { id: r.id }, props: { represa: r } }));
+}
+
+const { represa: r } = Astro.props as { represa: Represa };
+const { arriba, abajo } = vecinas(r.id);
+const nota = notaDe(r);
+const fotos = fotosDe(r);
+const i = represas.findIndex(x => x.id === r.id);
+const anterior = represas[i - 1];
+const siguiente = represas[i + 1];
+
+const descripcion = `${r.nombreComun}: represa sobre el río ${r.rio} (${r.provincia}), habilitada en ${r.anio}.` +
+  (r.potenciaMW ? ` Potencia instalada de ${num(r.potenciaMW, 'MW')}.` : '') +
+  (r.alturaM ? ` Altura de ${num(r.alturaM, 'm')}.` : '');
+
+const filas: [string, string][] = [
+  ['Nombre oficial', r.nombre],
+  ['Complejo', r.complejo],
+  ['Río', r.rio],
+  ['Cuenca', r.cuenca],
+  ['Provincia', r.provincia],
+  ['Localidad cercana', r.localidad ?? 'Sin dato'],
+  ['Tipo de presa', r.tipo ?? 'Sin dato'],
+  ['Altura', num(r.alturaM, 'm')],
+  ['Longitud de coronamiento', num(r.coronamientoM, 'm')],
+  ['Capacidad del embalse', num(r.embalseHm3, 'hm³')],
+  ['Potencia instalada', num(r.potenciaMW, 'MW')],
+  ['Generación media anual', num(r.generacionGWh, 'GWh')],
+  ['Año de habilitación', String(r.anio)],
+  ['Operador', r.operador],
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: r.nombreComun,
+  alternateName: r.nombre !== r.nombreComun ? r.nombre : undefined,
+  description: descripcion,
+  geo: { '@type': 'GeoCoordinates', latitude: r.lat, longitude: r.lon },
+  containedInPlace: { '@type': 'AdministrativeArea', name: `${r.provincia}, Argentina` },
+  image: fotos.map(f => f.src),
+};
+---
+
+<Base titulo={r.nombreComun} descripcion={descripcion} imagen={r.imagenes[0]}>
+  <main class="contenido">
+    <nav class="migas" aria-label="Ubicación en el sitio">
+      <a href="/represas/">Listado</a> <span aria-hidden="true">/</span> <span>Cuenca {r.cuenca}</span>
+    </nav>
+
+    <p class="eyebrow">Río {r.rio} · {r.provincia}</p>
+    <h1>{r.nombreComun}</h1>
+    {r.nombre !== r.nombreComun && <p class="lead">Nombre oficial: {r.nombre}</p>}
+    <p class="relato-pagina">{r.relato}</p>
+
+    <div class="grilla">
+      <div class="fotos">
+        {
+          fotos.map((f, n) => (
+            <figure>
+              <img src={f.src} alt={`${r.nombreComun}, foto ${n + 1}`} loading={n === 0 ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()" />
+              <figcaption class="credito"><a href={f.pagina} target="_blank" rel="noopener">{f.credito}</a></figcaption>
+            </figure>
+          ))
+        }
+      </div>
+
+      <div class="datos-col">
+        <div class="destacados">
+          <div><span>Potencia</span><strong class="num">{num(r.potenciaMW, 'MW')}</strong></div>
+          <div><span>Altura</span><strong class="num">{num(r.alturaM, 'm')}</strong></div>
+          <div><span>Embalse</span><strong class="num">{num(r.embalseHm3, 'hm³')}</strong></div>
+          <div><span>Habilitada</span><strong class="num">{r.anio}</strong></div>
+        </div>
+
+        <ul class="finalidades">
+          {r.finalidades.map(f => <li class="chip">{f}</li>)}
+        </ul>
+
+        <a class="boton" href={`/?r=${r.id}`}>Ver en el mapa</a>
+      </div>
+    </div>
+
+    <h2>Ficha técnica</h2>
+    <table class="ficha-tabla">
+      <tbody>
+        {filas.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}
+      </tbody>
+    </table>
+    {nota && <p class="nota">{nota}</p>}
+
+    {
+      (arriba.length > 0 || abajo.length > 0) && (
+        <>
+          <h2>En el mismo río</h2>
+          <div class="vecinas">
+            {arriba.map(v => <a href={`/represas/${v.id}/`}><small>Aguas arriba</small>{v.nombreComun}</a>)}
+            {abajo.map(v => <a href={`/represas/${v.id}/`}><small>Aguas abajo</small>{v.nombreComun}</a>)}
+          </div>
+        </>
+      )
+    }
+
+    <p class="fuente-pie">
+      Fuente: <a href={r.fuente} target="_blank" rel="noopener">ficha del ORSEP</a>. {r.coordenadas === 'OpenStreetMap' ? 'Ubicación: © colaboradores de OpenStreetMap.' : 'La ubicación en el mapa es aproximada.'}
+      {generaEnergia(r) ? '' : ' Esta presa no informa generación eléctrica.'}
+    </p>
+
+    <nav class="recorrido-pie" aria-label="Recorrido de norte a sur">
+      {anterior ? <a href={`/represas/${anterior.id}/`}><small>← Más al norte</small>{anterior.nombreComun}</a> : <span />}
+      {siguiente && <a class="der" href={`/represas/${siguiente.id}/`}><small>Más al sur →</small>{siguiente.nombreComun}</a>}
+    </nav>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</Base>
+
+<style>
+  .relato-pagina { font-size: 18px; max-width: 64ch; margin: 14px 0 0; }
+  .migas { font-size: 14px; color: var(--muted); margin-bottom: 18px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .grilla { display: grid; gap: 20px; margin-top: 20px; }
+  .fotos { display: grid; gap: 10px; min-width: 0; }
+  .fotos figure { margin: 0; }
+  .fotos img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 12px; background: var(--surface-2); }
+  .credito { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+  .credito a { color: inherit; }
+  .datos-col { display: grid; gap: 16px; align-content: start; }
+  .destacados { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .destacados > div { background: var(--surface); padding: 12px 14px; display: grid; }
+  .destacados span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .destacados strong { font-size: 22px; }
+  .finalidades { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .nota { font-size: 14px; color: var(--muted); border-left: 3px solid var(--hormigon); padding-left: 10px; }
+  .vecinas { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .vecinas a, .recorrido-pie a { display: grid; gap: 2px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 600; }
+  .vecinas a:hover, .recorrido-pie a:hover { border-color: var(--agua); }
+  small { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--agua); }
+  .fuente-pie { margin-top: 28px; font-size: 14px; color: var(--muted); }
+  .recorrido-pie { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 24px; }
+  .recorrido-pie .der { text-align: right; }
+
+  @media (min-width: 760px) {
+    .grilla { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+  }
+</style>
