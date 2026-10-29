@@ -93,3 +93,8 @@ Con `npm run dev` aparece arriba a la derecha del mapa el cuadro **Corregir ubic
 - MapLibre 6 carga su *worker* desde un archivo aparte. En `MapaRepresas.tsx` se importa con `?url` y se pasa a `setWorkerUrl`; sin eso el mapa no dibuja nada después del build.
 - El mapa es `client:only="react"` porque MapLibre necesita `window`. Mientras carga, la página muestra la lista de represas como respaldo.
 - Mapas base gratuitos y sin clave: CARTO (claro y oscuro según el tema del sistema) y Esri World Imagery para el satélite.
+
+## Licencia
+
+Código, diseño y textos: © 2026 Nicolás Chandía, todos los derechos reservados (ver `LICENSE`).
+Los datos del ORSEP (CC BY 4.0), las coordenadas de OpenStreetMap (ODbL), las fotos de Wikimedia Commons y las librerías usadas conservan sus propias licencias.

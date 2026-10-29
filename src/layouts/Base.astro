@@ -13,7 +13,10 @@ const { titulo, descripcion, imagen, pantallaCompleta = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ruta = Astro.url.pathname;
 const actual = (href: string) => (href === '/' ? ruta === '/' : ruta.startsWith(href)) ? 'page' : undefined;
-const tituloCompleto = titulo === 'Represas de Argentina' ? titulo : `${titulo} · Represas de Argentina`;
+// Imagen para la vista previa en redes (LinkedIn, WhatsApp): la de la represa o, si no hay, la general.
+const imagenOg = imagen ?? new URL('/og.jpg', Astro.site).toString();
+// Si el título ya nombra el sitio, no se repite la marca al final.
+const tituloCompleto = /represas de argentina/i.test(titulo) ? titulo : `${titulo} · Represas de Argentina`;
 ---
 
 <!doctype html>
@@ -33,8 +36,8 @@ const tituloCompleto = titulo === 'Represas de Argentina' ? titulo : `${titulo} 
     <meta property="og:title" content={tituloCompleto} />
     <meta property="og:description" content={descripcion} />
     <meta property="og:url" content={canonical} />
-    {imagen && <meta property="og:image" content={imagen} />}
-    <meta name="twitter:card" content={imagen ? 'summary_large_image' : 'summary'} />
+    <meta property="og:image" content={imagenOg} />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

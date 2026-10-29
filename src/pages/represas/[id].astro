@@ -18,6 +18,9 @@ const descripcion = `${r.nombreComun}: represa sobre el río ${r.rio} (${r.provi
   (r.potenciaMW ? ` Potencia instalada de ${num(r.potenciaMW, 'MW')}.` : '') +
   (r.alturaM ? ` Altura de ${num(r.alturaM, 'm')}.` : '');
 
+// Título para Google: "Presa El Tigre – río Diamante, Mendoza" (coincide con cómo se busca).
+const tituloSeo = `Presa ${r.nombreComun} – río ${r.rio}, ${r.provincia}`;
+
 const filas: [string, string][] = [
   ['Nombre oficial', r.nombre],
   ['Complejo', r.complejo],
@@ -47,7 +50,7 @@ const jsonLd = {
 };
 ---
 
-<Base titulo={r.nombreComun} descripcion={descripcion} imagen={r.imagenes[0]}>
+<Base titulo={tituloSeo} descripcion={descripcion} imagen={r.imagenes[0]}>
   <main class="contenido">
     <nav class="migas" aria-label="Ubicación en el sitio">
       <a href="/represas/">Listado</a> <span aria-hidden="true">/</span> <span>Cuenca {r.cuenca}</span>

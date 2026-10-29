@@ -1,0 +1,16 @@
+Copyright (c) 2026 Nicolás Chandía. Todos los derechos reservados.
+
+El código fuente, el diseño de la interfaz y los textos de este proyecto
+("Represas de Argentina") son obra de Nicolás Chandía. Se publican para que
+puedan verse y evaluarse, pero no se otorga permiso para copiarlos,
+modificarlos, distribuirlos ni usarlos en otros proyectos sin autorización
+escrita del autor.
+
+Contenido de terceros que NO forma parte de esta obra y conserva su propia licencia:
+- Datos técnicos y fotos del Organismo Regulador de Seguridad de Presas (ORSEP),
+  publicados en argentina.gob.ar bajo licencia Creative Commons Atribución 4.0.
+- Coordenadas de las presas tomadas de OpenStreetMap
+  (© colaboradores de OpenStreetMap, licencia ODbL 1.0).
+- Fotos de Wikimedia Commons, cada una con el autor y la licencia indicados en el sitio.
+- Librerías de código abierto (Astro, React, MapLibre, react-map-gl y otras),
+  bajo sus respectivas licencias.
