@@ -92,7 +92,8 @@ Con `npm run dev` aparece arriba a la derecha del mapa el cuadro **Corregir ubic
 
 - MapLibre 6 carga su *worker* desde un archivo aparte. En `MapaRepresas.tsx` se importa con `?url` y se pasa a `setWorkerUrl`; sin eso el mapa no dibuja nada después del build.
 - El mapa es `client:only="react"` porque MapLibre necesita `window`. Mientras carga, la página muestra la lista de represas como respaldo.
-- Mapas base gratuitos y sin clave: CARTO (claro y oscuro según el tema del sistema) y Esri World Imagery para el satélite.
+- Mapas base gratuitos y sin clave: OpenFreeMap (claro y oscuro según el tema del sistema) y Esri World Imagery para el satélite.
+- `public/mapa-represas-argentina.png` es el mapa fijo descargable. Se regenera con `scripts/mapa_png.py` (instrucciones en el archivo) si cambian las represas.
 
 ## Licencia
 

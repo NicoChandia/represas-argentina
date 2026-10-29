@@ -14,6 +14,22 @@ import { cuencas, generaEnergia, num, represas, totales } from '../../data/repre
       {totales.represas} presas en {cuencas.length} cuencas. Las que generan electricidad suman {num(totales.potenciaMW, 'MW')} de potencia instalada y unos {num(totales.generacionGWh, 'GWh')} por año.
     </p>
 
+    <figure class="mapa-fijo">
+      <a href="/mapa-represas-argentina.png">
+        <img
+          src="/mapa-represas-argentina.webp"
+          width="1000"
+          height="1150"
+          loading="lazy"
+          alt={`Mapa de Argentina con las ${totales.represas} represas que fiscaliza el ORSEP, numeradas de norte a sur, con el río y la provincia de cada una`}
+        />
+      </a>
+      <figcaption>
+        Mapa de las represas de Argentina para imprimir o usar en la escuela.
+        <a href="/mapa-represas-argentina.png" download>Descargar en alta calidad (PNG)</a>
+      </figcaption>
+    </figure>
+
     {
       cuencas.map(c => (
         <section class="cuenca" id={c.toLowerCase().replace(/[^a-z]+/g, '-')}>
@@ -56,6 +72,10 @@ import { cuencas, generaEnergia, num, represas, totales } from '../../data/repre
 </Base>
 
 <style>
+  .mapa-fijo { margin: 24px 0 32px; }
+  .mapa-fijo img { display: block; width: 100%; max-width: 560px; height: auto; border: 1px solid var(--line); border-radius: 12px; background: #f2f5f4; }
+  .mapa-fijo figcaption { margin-top: 10px; color: var(--muted); font-size: 15px; max-width: 560px; }
+  .mapa-fijo figcaption a { display: inline-block; margin-top: 4px; font-weight: 600; }
   .tabla-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
   .tabla { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 15px; }
   .tabla th, .tabla td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Map, { AttributionControl, Layer, Marker, NavigationControl, Source, type MapRef } from 'react-map-gl/maplibre';
-import { setWorkerUrl, type StyleSpecification } from 'maplibre-gl';
+import { setWorkerUrl, type ExpressionSpecification, type Map as MapaML, type StyleSpecification } from 'maplibre-gl';
 // MapLibre 6 carga su "worker" desde un archivo aparte: Vite lo copia y nos da la URL final.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url';
 import type { FeatureCollection, LineString } from 'geojson';
@@ -34,8 +34,9 @@ function margenInicial() {
     : { top: 64, bottom: 150, left: 16, right: 16 };
 }
 
-const ESTILO_CLARO = 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json';
-const ESTILO_OSCURO = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+// OpenFreeMap: gratis, sin clave y de uso libre (datos de OpenStreetMap). Reemplaza a CARTO, que ahora pide clave.
+const ESTILO_CLARO = 'https://tiles.openfreemap.org/styles/positron';
+const ESTILO_OSCURO = 'https://tiles.openfreemap.org/styles/dark';
 const ESTILO_SATELITE: StyleSpecification = {
   version: 8,
   sources: {
@@ -49,6 +50,24 @@ const ESTILO_SATELITE: StyleSpecification = {
   },
   layers: [{ id: 'satelite', type: 'raster', source: 'satelite' }],
 };
+
+/**
+ * Los estilos de OpenFreeMap muestran el nombre local o en inglés ("Falkland Islands", "Maule Region").
+ * Esto cambia cada etiqueta con nombre para que use el nombre en castellano de OpenStreetMap
+ * ("Islas Malvinas", "Región del Maule") y, si no hay, el nombre local.
+ * No toca las etiquetas que no son nombres (por ejemplo, los números de ruta).
+ */
+const TEXTO_ES: ExpressionSpecification = ['coalesce', ['get', 'name:es'], ['get', 'name']];
+function nombresEnCastellano(mapa: MapaML) {
+  const capas = mapa.getStyle()?.layers ?? [];
+  for (const capa of capas) {
+    if (capa.type !== 'symbol') continue;
+    const actual = mapa.getLayoutProperty(capa.id, 'text-field');
+    if (actual === undefined || !JSON.stringify(actual).includes('name')) continue;
+    if (JSON.stringify(actual) === JSON.stringify(TEXTO_ES)) continue;
+    mapa.setLayoutProperty(capa.id, 'text-field', TEXTO_ES);
+  }
+}
 
 const ZOOM_REPRESA = 10.5;
 /** Duración del vuelo entre represas durante el recorrido. */
@@ -323,6 +342,7 @@ export default function MapaRepresas() {
             const inicial = leerParametro();
             if (inicial) volarA(porId(inicial)!);
           }}
+          onStyleData={e => nombresEnCastellano(e.target)}
           onMove={e => setZoom(Math.round(e.viewState.zoom * 2) / 2)}
           onDragStart={() => setReproduciendo(false)}
           style={{ position: 'absolute', inset: 0 }}
